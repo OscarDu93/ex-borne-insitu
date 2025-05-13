@@ -1,0 +1,48 @@
+.pulse {
+  width: 100px;
+  height: 100px;
+  animation: animeBox linear infinite;
+  animation-duration: 6s;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(30px);
+}
+
+@keyframes animeBox {
+  0% {
+    transform: scale(1);
+    background: rgb(0, 187, 255);
+  }
+
+  30% {
+    transform: scale(4);
+    background: rgb(0, 187, 255);
+  }
+
+  33.33% {
+    transform: scale(1);
+    background: red;
+  }
+
+  63.33% {
+    transform: scale(4);
+    background: red;
+  }
+
+  66.66% {
+    transform: scale(1);
+    background: rgb(0, 128, 73);
+  }
+
+  96.66% {
+    transform: scale(4);
+    background: rgb(0, 128, 73);
+  }
+
+  100% {
+    transform: scale(1);
+    background: rgb(0, 187, 255);
+  }
+}

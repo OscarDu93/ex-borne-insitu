@@ -1,0 +1,39 @@
+.txt {
+  color: #fff;
+  text-align: center;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.logo {
+  width: 525px;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 433px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 85px;
+  background: #fff;
+  color: #000;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
