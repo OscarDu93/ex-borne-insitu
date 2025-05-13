@@ -1,0 +1,76 @@
+.btn {
+  margin-top: 473px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 433px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 85px;
+  background: #fff;
+  color: #000;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  animation: anim-btn 2.5s infinite ease-out;
+}
+
+.animation {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 433px;
+    height: 112px;
+    border-radius: 171px;
+    animation: pulse-btn 2.5s infinite ease-out;
+  }
+
+  &::before {
+    border: solid;
+    border-color: #ffffff;
+    border-width: 40px;
+    animation-delay: 0s;
+  }
+
+  &::after {
+    outline: solid;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 20px;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes anim-btn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-btn {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

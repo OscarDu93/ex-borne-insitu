@@ -1,12 +1,11 @@
 .pulse {
+  top: 50%;
+  bottom: 50%;
   width: 100px;
   height: 100px;
   animation: animeBox linear infinite;
   animation-duration: 6s;
   border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   filter: blur(30px);
 }
 
@@ -17,7 +16,7 @@
   }
 
   30% {
-    transform: scale(4);
+    transform: scale(50);
     background: rgb(0, 187, 255);
   }
 
@@ -27,7 +26,7 @@
   }
 
   63.33% {
-    transform: scale(4);
+    transform: scale(50);
     background: red;
   }
 
@@ -37,7 +36,7 @@
   }
 
   96.66% {
-    transform: scale(4);
+    transform: scale(50);
     background: rgb(0, 128, 73);
   }
 
