@@ -1,47 +1,74 @@
 .pulse {
+  position: absolute;
   top: 50%;
   bottom: 50%;
+  right: 50%;
   width: 100px;
   height: 100px;
-  animation: animeBox linear infinite;
-  animation-duration: 6s;
+  animation: animeBox infinite ease-out;
+  animation-duration: 15s;
   border-radius: 100%;
-  filter: blur(30px);
+  filter: blur(20px);
 }
 
 @keyframes animeBox {
   0% {
-    transform: scale(1);
+    transform: scale(0.5);
     background: rgb(0, 187, 255);
+    opacity: 0.5;
   }
 
-  30% {
-    transform: scale(50);
+  23% {
+    transform: scale(20);
     background: rgb(0, 187, 255);
+    opacity: 1;
   }
 
-  33.33% {
-    transform: scale(1);
+  24% {
+    transform: scale(0.5);
     background: red;
+    opacity: 0.5;
   }
 
-  63.33% {
-    transform: scale(50);
+  47% {
+    transform: scale(20);
     background: red;
+    opacity: 1;
   }
 
-  66.66% {
-    transform: scale(1);
+  48% {
+    transform: scale(0.5);
     background: rgb(0, 128, 73);
+    opacity: 0.5;
   }
 
-  96.66% {
-    transform: scale(50);
+  71% {
+    transform: scale(20);
     background: rgb(0, 128, 73);
+    opacity: 1;
+  }
+
+  72% {
+    transform: scale(0.5);
+    background: rgb(255, 242, 0);
+    opacity: 0.5;
+  }
+
+  89% {
+    transform: scale(20);
+    background: rgb(255, 242, 0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: scale(0.5);
+    background: rgb(255, 132, 251);
+    opacity: 0.5;
   }
 
   100% {
-    transform: scale(1);
-    background: rgb(0, 187, 255);
+    transform: scale(20);
+    background: rgb(255, 132, 251);
+    opacity: 1;
   }
 }
