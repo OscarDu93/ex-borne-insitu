@@ -1,10 +1,10 @@
 .pulse {
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 50%;
   bottom: 50%;
   right: 50%;
-  width: 100px;
-  height: 100px;
   animation: animeBox infinite ease-out;
   animation-duration: 15s;
   border-radius: 100%;
